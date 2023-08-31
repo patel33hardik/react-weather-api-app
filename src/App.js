@@ -1,24 +1,28 @@
-import logo from './logo.svg';
+
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import SideMenuNavbar from './Components/CompSideMenuNavbar';
+import Dashboard from './Pages/PageDashboard';
+import About from './Pages/PageAbout';
+import Help from './Pages/PageHelp';
+import Footer from './Components/CompFooterBar';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Making weather API
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="app-container">
+        <SideMenuNavbar />
+        <div className="AppContent max-width-100 container my-3">
+          <Routes>
+            <Route path="/" exact component={Dashboard} element={<Dashboard />}/>
+            <Route path="/about" component={About} element={<About />}/>
+            <Route path="/help" component={Help} element={<Help />}/>
+          </Routes>
+        </div>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

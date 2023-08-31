@@ -1,0 +1,8 @@
+#AppFooter .nav-footer {
+    color: white;
+    background-color: var(--jq-green-color);
+    border-radius: 4px;
+    padding: 8px 16px;
+    border: 1px solid #273747;
+    transition: background-color .2s ease-in-out, color .2s ease-in-out, border .2s ease-in-out;
+}
