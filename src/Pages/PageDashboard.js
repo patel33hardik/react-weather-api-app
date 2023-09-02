@@ -1,12 +1,10 @@
-import React from 'react'
-
+import React from 'react';
+import CompDashboard from '../Components/CompDashboard';
 
 function PageDashboard() {
     return (
         <div>
-            <div class="row justify-content-center">
-                <h1 class="col-md-6"> Dashboard Form </h1>
-            </div>
+            <CompDashboard />
         </div>
     )
 }
