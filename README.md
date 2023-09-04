@@ -1,5 +1,11 @@
 # Getting Started with Create React App
 
+
+To check the site open following URL
+
+https://patel33hardik.github.io/react-weather-api-app/
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
