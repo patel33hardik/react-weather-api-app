@@ -53,9 +53,12 @@ function CompDashboard() {
                     <div className="col-sm-6 col-md-4 mt-2">
                         <div className="card bg-dark text-white animated fadeInUp">
                         <div className="card-body">
-                            <h5 className="card-title">get Location</h5>
+                            <h5 className="card-title">
+                                <button className="btn btn-warning" onClick={getLocation}>
+                                    Click here to get your location
+                                </button>
+                            </h5>
                             <div className="weather-box">
-                                <button onClick={getLocation}>Get Location</button>
                                 {location ? (
                                     <div>
                                         Latitude: {location.latitude}

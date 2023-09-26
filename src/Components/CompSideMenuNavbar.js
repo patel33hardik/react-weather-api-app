@@ -36,6 +36,15 @@ function SideMenuNavbar() {
             </li>
             <li className="nav-item">
               <Link
+                to="/pass_remover"
+                className="nav-link"
+                onClick={handleNavLinkClick}
+              >
+                Password Remover
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
                 to="/help"
                 className="nav-link"
                 onClick={handleNavLinkClick}

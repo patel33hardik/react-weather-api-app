@@ -3,6 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import SideMenuNavbar from './Components/CompSideMenuNavbar';
 import Dashboard from './Pages/PageDashboard';
+import ExcelFilePassRemover from './Pages/PageExcelFilePassRemover';
 import About from './Pages/PageAbout';
 import Help from './Pages/PageHelp';
 import Footer from './Components/CompFooterBar';
@@ -15,7 +16,8 @@ function App() {
         <SideMenuNavbar />
         <div className="AppContent max-width-100 container my-3">
           <Routes>
-            <Route path="/" exact component={Dashboard} element={<Dashboard />}/>
+            <Route path="/*" exact component={Dashboard} element={<Dashboard />}/>
+            <Route path="/pass_remover" exact component={ExcelFilePassRemover} element={<ExcelFilePassRemover />}/>
             <Route path="/about" component={About} element={<About />}/>
             <Route path="/help" component={Help} element={<Help />}/>
           </Routes>
