@@ -45,6 +45,15 @@ function SideMenuNavbar() {
             </li>
             <li className="nav-item">
               <Link
+                to="/system_health"
+                className="nav-link"
+                onClick={handleNavLinkClick}
+              >
+                System Health
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
                 to="/help"
                 className="nav-link"
                 onClick={handleNavLinkClick}
