@@ -8,6 +8,10 @@ https://patel33hardik.github.io/react-weather-api-app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## System information
+
+System information page typically refers to details and statistics about a computer or software environment, encompassing key metrics such as CPU usage, memory utilization, disk space, and network activity. It provides insights into the performance and status of a system, aiding users and administrators in monitoring, troubleshooting, and optimizing system resources. FastAPI was used to calculate the server state and respond in JSON format.
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -24,6 +28,11 @@ You may also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+
+### Deploy to gh-pages
+`npm run deploy`
+
 
 ### `npm run build`
 
